@@ -159,6 +159,14 @@ const AddEmployee = NiceModal.create(({ data, onSuccess, messageApi }) => {
         <Form.Item name="role" label="Vai trò" initialValue={data?.role || ''}>
           <Select allowClear placeholder="Chọn vai trò" options={roles} />
         </Form.Item>
+        <Form.Item name="desc" label="Mô tả" initialValue={data?.desc || ''}>
+          <Input.TextArea
+            placeholder="Nhập mô tả"
+            autoComplete="nope"
+            spellCheck={false}
+            allowClear
+          />
+        </Form.Item>
         <Form.Item
           name="phone"
           label="Số điện thoại"

@@ -63,11 +63,6 @@ const Detail = ({ data, onEdit, onDelete, onBack }) => {
       ),
     },
     {
-      key: 'email',
-      label: 'Email',
-      children: detail?.email,
-    },
-    {
       key: 'phone',
       label: 'Số điện thoại',
       children: detail.phone,
@@ -81,6 +76,11 @@ const Detail = ({ data, onEdit, onDelete, onBack }) => {
       key: 'role',
       label: 'Vai trò',
       children: detail.roleData?.name || detail.role,
+    },
+    {
+      key: 'desc',
+      label: 'Mô tả',
+      children: detail.desc,
     },
     {
       key: 'hasPassword',

@@ -128,7 +128,9 @@ const WorkSchedule = ({ departmentId }) => {
   const renderShift = shift => (
     <>
       <ShiftTitle level={2} type="secondary">
-        {shift === 'morning' ? 'Ca sáng' : 'Ca chiều'}
+        {shift === 'morning'
+          ? 'Ca sáng (7h30 - 11h30)'
+          : 'Ca chiều (13h - 17h)'}
       </ShiftTitle>
       <Row gutter={24} justify="center">
         {daysOfWeek.map(day => {
